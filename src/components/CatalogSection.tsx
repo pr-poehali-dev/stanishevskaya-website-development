@@ -55,7 +55,7 @@ const products = [
 
 export default function CatalogSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 font-montserrat">
@@ -75,8 +75,8 @@ export default function CatalogSection() {
                 variant={index === 0 ? "default" : "outline"}
                 className={
                   index === 0
-                    ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white"
-                    : "border-pink-300 text-pink-600 hover:bg-pink-50"
+                    ? "bg-gradient-to-r from-gray-800 to-gray-900 text-white"
+                    : "border-gray-300 text-gray-700 hover:bg-gray-100"
                 }
               >
                 {category}
@@ -89,7 +89,7 @@ export default function CatalogSection() {
           {products.map((product) => (
             <Card
               key={product.id}
-              className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg"
+              className="group hover:shadow-2xl transition-all duration-300 border border-gray-200 shadow-lg hover:shadow-xl bg-white"
             >
               <CardContent className="p-0">
                 <div className="relative overflow-hidden">
@@ -99,7 +99,7 @@ export default function CatalogSection() {
                     className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-gradient-to-r from-gray-700 to-gray-900 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
                       Новинка
                     </span>
                   </div>
@@ -109,7 +109,7 @@ export default function CatalogSection() {
                       variant="ghost"
                       className="bg-white/80 hover:bg-white"
                     >
-                      <Icon name="Heart" size={20} className="text-pink-500" />
+                      <Icon name="Heart" size={20} className="text-gray-600" />
                     </Button>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export default function CatalogSection() {
                     <span className="text-2xl font-bold text-gray-900">
                       {product.price} ₽
                     </span>
-                    <Button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white">
+                    <Button className="bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white">
                       На Wildberries
                       <Icon name="ExternalLink" size={16} className="ml-2" />
                     </Button>
@@ -142,7 +142,7 @@ export default function CatalogSection() {
           <Button
             size="lg"
             variant="outline"
-            className="border-pink-300 text-pink-600 hover:bg-pink-50 px-8 py-6 text-lg font-semibold"
+            className="border-gray-300 text-gray-700 hover:bg-gray-100 px-8 py-6 text-lg font-semibold"
           >
             Посмотреть все товары
             <Icon name="ArrowRight" size={20} className="ml-2" />

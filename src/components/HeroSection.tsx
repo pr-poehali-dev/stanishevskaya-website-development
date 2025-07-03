@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 export default function HeroSection() {
   return (
-    <section className="pt-20 min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 relative overflow-hidden">
+    <section className="pt-20 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1920&h=1080&fit=crop')] bg-cover bg-center opacity-10"></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
@@ -11,7 +11,7 @@ export default function HeroSection() {
           <div className="space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight font-montserrat">
               Женственность
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-600 to-gray-800">
                 в каждой детали
               </span>
             </h1>
@@ -24,7 +24,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-6 text-lg font-semibold"
+                className="bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white px-8 py-6 text-lg font-semibold"
               >
                 Смотреть коллекцию
                 <Icon name="ArrowRight" size={20} className="ml-2" />
@@ -32,7 +32,7 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-pink-300 text-pink-600 hover:bg-pink-50 px-8 py-6 text-lg font-semibold"
+                className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg font-semibold"
               >
                 Lookbook
                 <Icon name="Eye" size={20} className="ml-2" />
@@ -91,8 +91,8 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-pink-500 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500 rounded-full opacity-10 animate-pulse"></div>
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full opacity-30 animate-pulse"></div>
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full opacity-20 animate-pulse"></div>
           </div>
         </div>
       </div>
